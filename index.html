@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokenAI</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🎓</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2 { font-family: 'Merriweather', serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2 font-bold text-xl tracking-tight">
+                <i class="fa-solid fa-graduation-cap text-blue-600"></i>
+                <span>Token<span class="text-blue-600">AI</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#concept" class="hover:text-blue-600 transition">Concept</a>
+                <a href="#security" class="hover:text-blue-600 transition">Implementation</a>
+                <a href="#analytics" class="hover:text-blue-600 transition">Analytics</a>
+            </div>
+            <a href="student.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-blue-200 transition">
+                Launch Live Mockup<i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-6 grid gap-12 items-center">
+            <div class="max-w-3xl">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">AI Grand Challenge</span>
+                <h1 class="text-5xl lg:text-6xl font-bold mb-8 leading-tight">Use of AI in exams with limited credits</h1>
+                <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-xl">
+                    Our proposal is to allow artificial intelligence during exams under specific conditions, strictly contained within a restricted environment.
+                </p>
+                <div class="flex gap-4">
+                    <a href="student.html" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">Launch Live Mockup</a>
+                    <a href="https://aigrandchallenge.inria.fr/processes/AI/f/41/proposals/69" class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">Read Our Proposal</a>
+                </div>
+                <p class="text-lg text-slate-300 mt-10 leading-relaxed max-w-xl">Marion GUILLARD - Mathis DUCHER - Kathleen SOMERS<br>INSA Lyon, Telecommunications Department</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="concept" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-bold mb-6">The Token<span class="text-blue-600">AI</span> Concept</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed text-lg">Integrating AI into high-stakes assessment requires a balance of security, ethics, and critical thinking. Our framework treats the LLM as a finite, monitored resource.</p>
+            </div>
+            <div class="mermaid flex justify-center mb-20">
+                mindmap
+                    root("Constrained/restricted AI based on a metric (token) in a pedagogical situation (exam/lab)")
+                        Inequalities
+                            Knowledge of tools
+                                Training
+                                Critical thinking
+                                Analysis of biases
+                            Access to the resource
+                        
+                        Tensions
+                                Among students: knowledge of the tools
+                                Between teaching staff: uses for/against
+                                IT department for management
+
+                        Dependence
+                            Limited resources
+                                Instrumented tools
+                            Social impact
+                            Sovereignty
+                                LLM specific to the institution
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50/50">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital Sovereignty</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Institutions deploy centralized, secure AI platforms internally. This avoids dependency on external tech giants and ensures absolute data privacy for student sessions.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50/50">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Token-Based Assistance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Usage is limited via a token system. Professors set a specific budget, forcing students to strategically decide when a hint or verification is truly necessary.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl bg-slate-50/50">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Environmental Impact</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Real-time carbon tracking educates students about the physical cost of AI. Minimal usage is rewarded with grade bonuses, encouraging mindful interactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="py-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-20 -left-20 w-64 h-64 bg-blue-200/50 blur-3xl rounded-full"></div>
+                    <div class="relative bg-white p-8 rounded-3xl shadow-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-400 text-xs uppercase tracking-widest mb-6">Security Architecture</h4>
+                        <ul class="space-y-6">
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                <span><strong>No File Uploads:</strong> Students must formulate their own prompts, requiring active thinking.</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                <span><strong>Aggregated Models:</strong> Teachers select models per specific subject needs.</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-circle-check text-green-500 mt-2"></i>
+                                <span><strong>Locked Kiosk:</strong> Operates through a secure browser (SEB) to block external internet access.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">Implementation</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                        Our model ensures that students lacking fundamental understanding still struggle. By restricting tokens (like limiting a cheat sheet), we prevent students from delegating all reasoning to the algorithm. 
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                        Teachers gain flexibility: a large budget might test prompt engineering and critical analysis, while a small budget tests basic troubleshooting or knowledge retrieval.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analytics" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-8">Post-Exam Analytics</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                    After the session, all prompts are accessible to teachers. This data allows for a deep analysis of student reasoning and their interactions with AI.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <i class="fa-solid fa-chart-line text-blue-600"></i>
+                        <span class="font-medium">Analyze request formulation patterns for each question</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <i class="fa-solid fa-microscope text-blue-600"></i>
+                        <span class="font-medium">Adjust future exams based on LLM output trends</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <i class="fa-solid fa-user-graduate text-blue-600"></i>
+                        <span class="font-medium">Enhance integration of AI in lectures</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-900 rounded-3xl p-8 shadow-2xl relative">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="text-blue-400 text-xs font-bold uppercase tracking-widest">Teacher Dashboard</div>
+                    <div class="flex gap-2">
+                        <div class="w-2 h-2 rounded-full bg-slate-700"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-700"></div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="h-3 bg-slate-800 rounded w-3/4"></div>
+                    <div class="h-3 bg-slate-800 rounded w-1/2"></div>
+                    <div class="grid grid-cols-3 gap-4 pt-4">
+                        <div class="h-20 bg-blue-600/20 border border-blue-500/20 rounded-lg"></div>
+                        <div class="h-20 bg-slate-800 rounded-lg"></div>
+                        <div class="h-20 bg-slate-800 rounded-lg"></div>
+                    </div>
+                    <div class="h-32 bg-slate-800 rounded-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 gradient-bg text-white border-t border-white/10 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Ready to see it in action?</h2>
+            <p class="text-slate-400 mb-12">Explore the mockup demonstration interface just below</p>
+            <a href="student.html" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-2xl text-xl font-bold transition inline-block shadow-2xl shadow-blue-900/50">
+                Launch Live Mockup
+            </a>
+            <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-500">
+                <p class="font-bold text-left">Marion GUILLARD<br>Mathis DUCHER <br>Kathleen SOMERS</p>
+                <p class="font-bold text-left">INSA Lyon<br>Telecommunications Department</p>
+                <p class="font-bold">&copy; 2026 TokenAI - For presentation purposes only</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
