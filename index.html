@@ -10,7 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+        //mermaid.initialize({ startOnLoad: true, theme: 'base' }); // default / neutral / dark / forest / base
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                'primaryColor': '#286cff',
+                'primaryTextColor': '#fff',
+                'mainBkg': '#eee',
+                'lineColor': '#F8B229'
+            }
+            });
     </script>
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
@@ -32,9 +42,7 @@
                 <a href="#security" class="hover:text-blue-600 transition">Implementation</a>
                 <a href="#analytics" class="hover:text-blue-600 transition">Analytics</a>
             </div>
-            <a href="student.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-blue-200 transition">
-                Launch Live Mockup<i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
+            <a href="student.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-blue-200 transition">Live Mockup<i class="fa-solid fa-arrow-right ml-2"></i></a>
         </div>
     </nav>
 
@@ -43,9 +51,7 @@
             <div class="max-w-3xl">
                 <span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">AI Grand Challenge</span>
                 <h1 class="text-5xl lg:text-6xl font-bold mb-8 leading-tight">Use of AI in exams with limited credits</h1>
-                <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-xl">
-                    Our proposal is to allow artificial intelligence during exams under specific conditions, strictly contained within a restricted environment.
-                </p>
+                <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-xl">Our proposal is to allow artificial intelligence during exams under specific conditions, strictly contained within a restricted environment.</p>
                 <div class="flex gap-4">
                     <a href="student.html" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">Launch Live Mockup</a>
                     <a href="https://aigrandchallenge.inria.fr/processes/AI/f/41/proposals/69" class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">Read Our Proposal</a>
